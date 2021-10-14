@@ -1,0 +1,85 @@
+title: Zoe Rowbotham | CGD Devlog
+greetings: Zoe Rowbotham | CGD Devlog
+description: >-
+  Welcome 👋
+  This is a development log detailing the weekly progress Commerical Games Development Module
+  Over the course of the module I will paripicate in 3 'Game Jams' where as a group we develop a game and one final cohort game, made by the entire cohort.
+
+lang: en-UK
+timezone:  Europe/London
+repo: https://github.com/zar67/cgd-devlog
+data-theme: dark
+
+author:
+  name: Zoe Rowbotham
+  bio: 3rd Year Games Technology Student
+  userpicture: 
+  username: zar67
+  github: zar67
+  twitter: rowbotham_zoe
+  email: zoerowbotham1@gmail.com
+
+# Font Settings
+googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
+
+# URL settings
+url: "https://zar67.github.io"
+baseurl: "/cgd-devlog"
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
