@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Game Jam One Start - De-Make"
-date: 2021-05-28 18:00:00 +0100
+date: 2021-10-17 18:00:00 +0100
 tags: jam-one assassins-creed 
 ---
 ### Brief
-To de-make a modern, popular title so it could theoretically play on the Atari 2600.
-Can use any game engine to make the game.
-Needs to have visuals and controls that would be realistic on an Atari 2600.
-An arcade style game, with no saves, to be played in one session.
+- De-make a modern, popular title so it could theoretically play on the Atari 2600.
+- Can use any game engine to make the game.
+- Needs to have visuals and controls that would be realistic on an Atari 2600.
+- An arcade style game, with no saves, to be played in one session.
 
 ### Summary
 Our group started off with a list of games that we could possibly de-make and narrowed it down to Assassin's Creed.
@@ -112,4 +112,10 @@ private void UpdateCrouching(ref float movement)
   }
 }
 {% endhighlight %}
+
+By the end of the first week of the Game Jam I have the basic movement for the character setup, meaning that it is easier for others in the group to test out their work. I still need to work on: complex movement (climbing), camera, UI and finding/making more sprites to use in the game. My aim for next week is to get the complex movement of climbing and wall jumping implemented, then I can begin to work on the other, smaller, tasks. 
+
 ### Next Steps
+- Implementing wall jumping
+- Implementing climbing
+- Participate in group play test
