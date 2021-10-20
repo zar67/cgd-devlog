@@ -53,6 +53,8 @@ Setting up the movement was as simple as getting the input and applying a force 
   m_rigidbody.velocity = Vector3.SmoothDamp(m_rigidbody.velocity, targetVelocity, ref m_velocity, m_movementSmoothingAmount);
 {% endhighlight %}
 
+I did encounter an issue with the basic movement where the player would sometimes get stuck in the middle of a platform and would have to be moved away and moved back again to continue. This was because the platforms are made of individual tiles each with they're own collider. This meant the square collider of the player would get caught on the edges of the tiles. To fix this I simply added a composite collider to the tilemap so all the platforms had combined colliders instead of individual ones. 
+
 Jumping was easily as simple, just adding a check for whether the player is grounded or not, then adding a vertical force to the Rigidbody when the jump input is given.
 
 {% highlight c# %}
@@ -112,6 +114,8 @@ private void UpdateCrouching(ref float movement)
   }
 }
 {% endhighlight %}
+
+I did come across some issues with the crouching where the player would become stuck in the collider of a platform when standing up underneath it, this was because I was setting the m_crouchInput variable directly in the crouch check, meaning it would be overriden by the input system. I simple fixed this by adding the crouch variable seen above to be temporarily created and update in the UpdateCrouch() function.
 
 By the end of the first week of the Game Jam I have the basic movement for the character setup, meaning that it is easier for others in the group to test out their work. I still need to work on: complex movement (climbing), camera, UI and finding/making more sprites to use in the game. My aim for next week is to get the complex movement of climbing and wall jumping implemented, then I can begin to work on the other, smaller, tasks. 
 
