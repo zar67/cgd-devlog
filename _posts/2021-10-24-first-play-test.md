@@ -62,8 +62,10 @@ The main advantage for doing this is that no other objects will be affected by d
 
 One remaining issue with the climbing is that if the player doesn't jump high enough they may become stuck halfway up the platform, this is due to the Platformeffector2D and the 2 separate colliders on the player (one main collider and one collider disabled when crouching). This is a bug I need to work on and fix, my initial thought are to have one collider instead and change the size of it when crouching, but this will be worked on at a later stage.
 
+At the end of the week, I created some more animations for the player so that it looks better when moving about the environment. This included a crouching animation as well as a hanging animation.
+
 ### Next Steps
 - Fix climbing bugs 
 - Create more player animations
 - Create level sections
-- Integrate everyone's work together into a workig game loop
+- Integrate everyone's work together into a working game loop
