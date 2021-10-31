@@ -32,3 +32,9 @@ After the play test we discussed as a group what we needed to do next and also d
 The first thing I went about implementing after the play test was the death animations, both for the player and the enemies. This was tricker than first appeared since the enemies would still be able to alert to the player presence even after being killed, because the scripts were still updating. I fiddled around with disabling the scripts on the enemy's death and managed to get it working in the end. 
 
 I also changed the camera from following the player to constantly moving forward at a certain speed, the speed of the camera will increase as the difficulty increases and I allowed for this in the code with a temporary difficulty value to be replaced when Liam implements the difficulty value with the score.
+
+Finally this week I also added a tutorial section where the player can learn the mechanics of the game. This will always appear at the start of the game for the player to learn how to move, jump, climb, attack etc. 
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/jam-one/tutorial-section.png" alt="Tutorial Section"/>
+</p>
