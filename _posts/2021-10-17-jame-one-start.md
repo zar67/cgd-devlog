@@ -29,9 +29,7 @@ We also broke up the game into the major features and tasks to split them betwee
 - Sound - Stan
 - Camera - Zoe
 
-After the main session, I spent some time designing the movement for the character and designing a sprite for the character (simply reducing the resolution of one I found online).
-
-Here's the initial sprite I came up with: 
+After the main session, I spent some time designing the movement for the character and designing a sprite for the character (simply reducing the resolution of one I found online). Here's the initial sprite I came up with: 
 
 <p align="center">
   <img src="{{site.baseurl}}/assets/jam-one/character-run.gif" alt="Animated Character Run"/>
