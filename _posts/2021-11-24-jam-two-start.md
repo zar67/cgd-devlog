@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jam Two Start - Random Generation"
-date: 2021-11-07 18:00:00 +0100
+date: 2021-11-24 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 
@@ -35,3 +35,4 @@ This week I got the randomly generated map up and running with terrain types and
 On Monday we met to consolidate our progress and decide the final things we wanted done before the play test, we decided we wanted to be able to play with 2 players and have them move around and attack eachother - essentially the core functionality of our game.
 
 # Next Steps
+- Fix World Generation Bugs
