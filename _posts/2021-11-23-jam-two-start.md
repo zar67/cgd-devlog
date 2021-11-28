@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Jam Two Start - Random Generation"
-date: 2021-11-24 18:00:00 +0100
+title: "Game Jam Two Start - Random Generation"
+date: 2021-11-23 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 

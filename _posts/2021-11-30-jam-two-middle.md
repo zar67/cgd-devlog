@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Jam Two Progress"
-date: 2021-12-01 18:00:00 +0100
+title: "Game Jam Two - Good Progress"
+date: 2021-11-30 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 

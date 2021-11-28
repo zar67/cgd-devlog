@@ -1,21 +1,9 @@
 ---
 layout: post
-title: "Main Features Complete"
-date: 2021-10-31 18:00:00 +0100
+title: "Game Jam One - Main Features Complete"
+date: 2021-11-02 18:00:00 +0100
 tags: jam-one assassins-creed 
 ---
-
-This week I started by completing the bug with climbing where the player gets stuck. As suggested last week this was because of the two colliders on the player. I fixed this by removing the crouch collider and changing the height of the main collider when the player crouches, this fixed the issue quite nicely. 
-
-Next, I added in some environment sprites so that there wasn't white cubes everywhere anymore. I made a simple brick texture as well as a wooden platform texture for the hanging platforms. This is what they look like:
-
-<p align="center">
-  <img src="{{site.baseurl}}/assets/jam-one/environment-sprites.png" alt="Environment Sprites"/>
-</p>
-
-I next worked on merging all the work of the group together so that we had a complete game loop to show off. I made some fixes to the UI that Liam created and merged in all the branches together (on a test branch). I created a Game scene added all the relevant scenes to the build settings. With some minor bug fixes, I had a working game loop that was a culmination of all the work the group has done so far.
-
-The final thing I did before this week's meeting was create a world section and a better starting section to give some variety as we play and show off the game. The new section also gave the ability to show off the AI and the movement fully.
 
 During the play test this week with Andy we received the following feedback:
 - Hay Bales would be good to push the Assassin's Creed IP a bit more.
@@ -33,8 +21,10 @@ The first thing I went about implementing after the play test was the death anim
 
 I also changed the camera from following the player to constantly moving forward at a certain speed, the speed of the camera will increase as the difficulty increases and I allowed for this in the code with a temporary difficulty value to be replaced when Liam implements the difficulty value with the score.
 
-Finally this week I also added a tutorial section where the player can learn the mechanics of the game. This will always appear at the start of the game for the player to learn how to move, jump, climb, attack etc. 
+I added a tutorial section where the player can learn the mechanics of the game. This will always appear at the start of the game for the player to learn how to move, jump, climb, attack etc.
 
 <p align="center">
   <img src="{{site.baseurl}}/assets/jam-one/tutorial-section.png" alt="Tutorial Section"/>
-</p>
+</p> 
+
+Finally, this week I worked on some minor improvements and polish before presenting our game at the end of the week. I improved the climbing up so that the player can jump up from a platform rather than just climbing down. I also setup the crouch animation to work when the player is in a pile of hay to improve how it looks.

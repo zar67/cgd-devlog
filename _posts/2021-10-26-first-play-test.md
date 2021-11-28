@@ -1,37 +1,11 @@
 ---
 layout: post
-title: "First Play Test"
-date: 2021-10-20 18:00:00 +0100
+title: "Game Jam One - First Play Test"
+date: 2021-10-26 18:00:00 +0100
 tags: jam-one assassins-creed play-test
 ---
 
-In the start of the second week I implemented a wall jump where the player can slide down and jump off the wall. To do this I have a boolean value called m_canGrabWall which determines if the player is close enough to a wall to 'grab', this is calculated by an OverlapCircle check with a transform placed at the front of the player. If a player can grab a wall and is moving into the wall they will 'grab' it, sliding down the wall at a reduced fall speed. When grabbing a wall the player can use the jump key to launch off the wall away from it, this temporarily removes control from the player to make sure they get far enough away from the wall before control is regained.
-
-{% highlight c# %}
-if (m_isGrabbingWall)
-{
-    m_rigidbody.gravityScale = m_defaultGravityScale * m_wallGrabbingGravityMultiplier;
-    m_rigidbody.velocity = Vector2.zero;
-
-    if (m_jumpInput && m_jumpInputPressedThisFrame)
-    {
-        m_wallJumpTimer = m_wallJumpDuration;
-        m_rigidbody.AddForce(new Vector2(-(m_movementInput * m_jumpForce), m_jumpForce * m_wallJumpHeightMultiplier));
-        Flip();
-
-        m_rigidbody.gravityScale = m_defaultGravityScale;
-        m_isGrabbingWall = false;
-        m_canControl = false;
-    }
-}
-
-{% endhighlight %}
-
-This ended up being quite tricky to do and ended up with the player jumping up to the ceiling on several occasions due to bugs in the code. Eventually I managed to smooth everything out and while the wall jumping could do with improvement in the future the basics are in for now. 
-
-I also added idle and run animations to the player so that it looks much better when moving for the play test. The player character still looks a bit odd when sliding down a wall or crouching (as the player's head slides through the ceiling) but these animations will be improved in future.
-
-After this we had our first group meeting/play test where I got to see Matt's AI work as well as Liam's combat work and Stan's procedural generation work. We discussed next steps and decided we would need to merge all our work together soon, especially the Combat and AI. We also shuffled some work tasks around as some of the more complicated tasks turned out to be easier than expected such as the combat.
+At the start of week two we had our first group meeting/play test where I got to see Matt's AI work as well as Liam's combat work and Stan's procedural generation work. We discussed next steps and decided we would need to merge all our work together soon, especially the Combat and AI. We also shuffled some work tasks around as some of the more complicated tasks turned out to be easier than expected such as the combat.
 
 We also decided that everyone would make at least one section for the procedural level generation to instantiate so that we have a range of sections to be displayed when playing the game.
 
@@ -62,7 +36,18 @@ The main advantage for doing this is that no other objects will be affected by d
 
 One remaining issue with the climbing is that if the player doesn't jump high enough, they may become stuck halfway up the platform, this is due to the Platformeffector2D and the 2 separate colliders on the player (one main collider and one collider disabled when crouching). This is a bug I need to work on and fix, my initial thoughts are to have one collider instead and change the size of it when crouching, but this will be worked on at a later stage.
 
-At the end of the week, I created some more animations for the player so that it looks better when moving about the environment. This included a crouching animation, a wall sliding animation as well as a hanging animation.
+This week I also created some more animations for the player so that it looks better when moving about the environment. This included a crouching animation, a wall sliding animation as well as a hanging animation.
+
+At the end of the week, I fixed the bug with climbing where the player gets stuck. As suggested earlier this was because of the two colliders on the player. I fixed this by removing the crouch collider and changing the height of the main collider when the player crouches, this fixed the issue quite nicely. 
+I also added in some environment sprites so that there weren’t white cubes everywhere anymore. I made a simple brick texture as well as a wooden platform texture for the hanging platforms. This is what they look like:
+ 
+<p align="center">
+  <img src="{{site.baseurl}}/assets/jam-one/environment-sprites.png" alt="Environment Sprites"/>
+</p>
+
+The final task I completed this was merging all of the groups work together so that we had a complete game loop to show off. I made some fixes to the UI that Liam created and merged in all the branches together (on a test branch). I created a Game scene added all the relevant scenes to the build settings. With some minor bug fixes, I had a working game loop that was a culmination of all the work the group has done so far.
+
+The final thing I did before this week’s meeting was create a world section and a better starting section to give some variety as we play and show off the game. The new section also gave the ability to show off the AI and the movement fully.
 
 ### Next Steps
 - Fix climbing bugs 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Game Jam One Start - De-Make"
-date: 2021-10-17 18:00:00 +0100
+date: 2021-10-19 18:00:00 +0100
 tags: jam-one assassins-creed 
 ---
 ### Brief
@@ -79,43 +79,36 @@ Hovever, I did improve the jump by adding a Mario style element - allowing the p
 {% endhighlight %}
 
 After the basic movement was setup, I moved on to the more complex movement elements, starting with crouching. The player needs to be able to crouch down to one unit high to be able to hide in hay etc, however if they are hiding under something and they can't stand up (e.g. the ceiling is too low) they need to stay crouching until they can stand up again. This is done by adding a Transform to use as a ceiling check point and using Physics2D.OverlapCircle to see if there is a ceiling above the player.
-
 There are two colliders on the player, one covering the players head and upper body, one covering the lower body and legs. When crouching the top collider is disabled and eventually a crouching animation will be shown so the player is visually one unit tall.
 
+I did come across some issues with the crouching where the player would become stuck in the collider of a platform when standing up underneath it, I added in some logic to check for a ceiling above the player and force the player to crouch if they can’t stand up fully.
+
+By the end of the first couple of days I have the basic movement for the character setup, meaning that it is easier for others in the group to test out their work.
+Next, I implemented a wall jump where the player can slide down and jump off the wall. To do this I have a boolean value which determines if the player is close enough to a wall to 'grab', this is calculated by an OverlapCircle check with a transform placed at the front of the player. If a player can grab a wall and is moving into the wall they will 'grab' it, sliding down the wall at a reduced fall speed. When grabbing a wall, the player can use the jump key to launch off the wall away from it, this temporarily removes control from the player to make sure they get far enough away from the wall before control is regained.
+
+This ended up being quite tricky to do and ended up with the player jumping up to the ceiling on several occasions due to bugs in the code. Eventually I managed to smooth everything out and while the wall jumping could do with improvement in the future the basics are in for now. 
+ 
 {% highlight c# %}
-private void UpdateCrouching(ref float movement)
+if (m_isGrabbingWall)
 {
-  bool crouch = m_crouchingInput;
+    m_rigidbody.gravityScale = m_defaultGravityScale * m_wallGrabbingGravityMultiplier;
+    m_rigidbody.velocity = Vector2.zero;
 
-  // Crouch Check
-  if (!m_crouchingInput)
-  {
-    if (Physics2D.OverlapCircle(m_ceilingCheck.position, CEILING_RADIUS, m_whatIsGround))
+    if (m_jumpInput && m_jumpInputPressedThisFrame)
     {
-      crouch = true;
-    }
-  }
+        m_wallJumpTimer = m_wallJumpDuration;
+        m_rigidbody.AddForce(new Vector2(-(m_movementInput * m_jumpForce), m_jumpForce * m_wallJumpHeightMultiplier));
+        Flip();
 
-  if (m_isGrounded || m_canAirControl)
-  {
-    if (crouch)
-    {
-      m_wasCrouching = true;
-      movement *= m_crouchSpeedMultiplier;
-      m_crouchCollider.enabled = false;
+        m_rigidbody.gravityScale = m_defaultGravityScale;
+        m_isGrabbingWall = false;
+        m_canControl = false;
     }
-    else
-    {
-      m_crouchCollider.enabled = true;
-      m_wasCrouching = false;
-    }
-  }
 }
+
 {% endhighlight %}
 
-I did come across some issues with the crouching where the player would become stuck in the collider of a platform when standing up underneath it, this was because I was setting the m_crouchInput variable directly in the crouch check, meaning it would be overridden by the input system. I simple fixed this by adding the crouch variable seen above to be temporarily created and update in the UpdateCrouch() function.
-
-By the end of the first week of the Game Jam I have the basic movement for the character setup, meaning that it is easier for others in the group to test out their work. I still need to work on: complex movement (climbing), camera, UI and finding/making more sprites to use in the game. My aim for next week is to get the complex movement of climbing and wall jumping implemented, then I can begin to work on the other, smaller, tasks. 
+I also added idle and run animations to the player so that it looks much better when moving for the play test. The player character still looks a bit odd when sliding down a wall or crouching (as the player's head slides through the ceiling) but these animations will be improved in future.
 
 ### Next Steps
 - Implementing wall jumping
