@@ -24,6 +24,10 @@ On Monday, I spent some time merging everything together so that we had a workin
 
 I also added a Fog of War to the map to engage Explorer player types more.
 
+<p align="center">
+  <img src="{{site.baseurl}}/assets/jam-two/fog-of-war.png" alt="Fog Of War"/>
+</p> 
+
 # Next Steps
 - Play Test 
 - Polishing and Bug Fixing
