@@ -18,9 +18,12 @@ Explorer: Move around the map to discover the whole map.
 
 This week I focused on fixing the bugs in the world generation and helping the other with getting the world generation hooked up to the combat and the networking systems.
 
+There were some bugs with the path finding function as well as some features requested from the others such as being able to select which terrain types a unit can traverse.
+
 On Monday, I spent some time merging everything together so that we had a working game loop where two players can connect and take their turns. 
 
 I also added a Fog of War to the map to engage Explorer player types more.
 
 # Next Steps
-- 
+- Play Test 
+- Polishing and Bug Fixing
