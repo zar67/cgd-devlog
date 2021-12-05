@@ -16,6 +16,6 @@ I added in different coloured ruins, to indicate to the player which ruin is the
 
 I also fixed the clamping bug with the camera, so now the camera is correctly clamped to the world.
 
-We managed to get a complete game loop in this final week, with an end state. I added in some checks to make sure that the player can only move their own units, and can only do so on their turn. 
+We managed to get a complete game loop in this final week, with an end state. I added in some checks to make sure that the player can only move their own units and can only do so on their turn. 
 
-Finally this week I also made the UI one coherant style, and fixed a lot of the positions to make it scalable. I also fixed the game HUD so that the turn ui updated correctly and hid the end turn button when it's not the players turn.
+Finally, this week I also made the UI one coherent style and fixed a lot of the positions to make it scalable. I also fixed the game HUD so that the turn UI updated correctly and hid the end turn button when it's not the players turn.
