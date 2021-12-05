@@ -5,6 +5,7 @@ date: 2021-11-02 18:00:00 +0100
 tags: jam-one assassins-creed 
 ---
 
+# Summary 
 During the play test this week with Andy we received the following feedback:
 - Hay Bales would be good to push the Assassin's Creed IP a bit more.
 - Generally, the game is looking good.
