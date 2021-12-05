@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Game Jam Two Final Week - Feedback"
-date: 2021-12-05 18:00:00 +0100
+date: 2021-12-07 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 
