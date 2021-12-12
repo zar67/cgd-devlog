@@ -8,14 +8,6 @@ tags: jam-two turn-based-cyborgs
 # Summary
 We presented our game on Wednesday and got some final feedback from Andy and Simon, mainly that we need to improve the feedback in our game and polish it.
 
-# Good
-- There was good feedback regarding flow and difficulty.
-- The climbing and jumping was well implemented.
-- Felt immersive and intuitive.
-- Fun mechanics and smooth gameplay.
-- Excellent tutorial which allows for easy understanding.
-- Simple and well-done controls.
-
 # Improvements/Bugs
 - Code cleanup.
 - Tutorial section.
@@ -29,6 +21,5 @@ We presented our game on Wednesday and got some final feedback from Andy and Sim
 - Disable path display is path longer than tiles can move.
 - Improve path display visuals.
 - Split UI into seperate scene with a game manager.
-
 
 We decided as a team to work on these throughout the rest of the year until the final submission.
