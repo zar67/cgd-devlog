@@ -5,6 +5,7 @@ date: 2021-10-26 18:00:00 +0100
 tags: jam-one assassins-creed play-test
 ---
 
+# Summary
 At the start of week two we had our first group meeting/play test where I got to see Matt's AI work as well as Liam's combat work and Stan's procedural generation work. We discussed next steps and decided we would need to merge all our work together soon, especially the Combat and AI. We also shuffled some work tasks around as some of the more complicated tasks turned out to be easier than expected such as the combat.
 
 We also decided that everyone would make at least one section for the procedural level generation to instantiate so that we have a range of sections to be displayed when playing the game.

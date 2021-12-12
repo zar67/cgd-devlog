@@ -4,6 +4,7 @@ title: "Game Jam One Start - De-Make"
 date: 2021-10-19 18:00:00 +0100
 tags: jam-one assassins-creed 
 ---
+
 ### Brief
 - De-make a modern, popular title so it could theoretically play on the Atari 2600.
 - Can use any game engine to make the game.
