@@ -6,6 +6,10 @@ tags: cohort-project
 ---
 
 # Summary
+This week we didn't end up showing our Alpha, but had made significant progress from the week before. We also decided that each team should be thinking more about networking and actively getting involved in the networking of their own systems alongside the networking team.
 
+This week I planned to help out with the networking for the bases but due to personal circumstances I didn't do much this week. 
 
 # Next Steps
+- Fully networked bases
+- UI focus
