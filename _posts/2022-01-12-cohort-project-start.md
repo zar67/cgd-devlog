@@ -23,7 +23,3 @@ Skills/Combat - Foundation Games
 Art/Modelling
 Sound
 UI - Random Idiots
-
-# Next Steps
-- Create Unity Project
-- Start Base Development with an API

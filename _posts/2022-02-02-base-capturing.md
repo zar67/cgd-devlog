@@ -15,6 +15,3 @@ This week I started adding in a structure for the base caputuring logic which wo
 I set this up with a capture trigger collider which detects objects with an Entity script entering and exiting the zone.
 
 I also setup a structure for the defences, where bases have certain defence locations that players can interact with to build and repair defences. Finally I added in some UI to display this for Matt to easily hookup with his defence creation.
-
-# Next Steps
-- Win Conditions

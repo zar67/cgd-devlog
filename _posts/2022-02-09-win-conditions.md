@@ -15,6 +15,3 @@ This week I focused on getting the win conditions of the game working, I used Li
 These three are all now working correctly together, however nothing yet happens when the win condition is triggered except for the timer stops and the bases stop producing score. 
 
 Finally this week I organised the folders of our scripts and modified Liam's defences to work together with the original defence structure I created, I removed assets that weren't needed and focused on simplifiying the code and the branches. 
-
-# Next Steps
-- Communicate with other reps for more tasks.

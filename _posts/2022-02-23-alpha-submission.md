@@ -13,7 +13,3 @@ This week I mainly focused on fixing some of the bugs that occured in the play t
 Next I took on the task to give players teams and get them spawning at their correct bases. This was pretty simple to do but allows the functionality of the bases to work as intended without having team names being empty strings or manually setting the team names of the players. 
 
 Finally this week I added in some lasers into the bases that change colour based upon the team that owns it and wether it's being contested. Currently these are just a massive cylinder but in future I think they should be a shader or a particle system instead as they will most likely look better when being flown around by the players.
-
-# Next Steps
-- Show the alpha again.
-- Get list of bugs and tasks from reps.
