@@ -6,6 +6,7 @@ tags: cohort-project
 ---
 
 # Summary
+
 This week we presented the Alpha. But the morning of we realised that one of the teams had cause the project to break in the develop branch. The networking team did a great job at fixing this while we had our reps meeting and talked about what everyone had done and what the next steps were. We finally managed to show off the alpha but due to the late minute development and fixing, there wasn't a lot to show that was working together. 
 
 This week I mainly focused on fixing some of the bugs that occured in the play test. The first one was that the UI for base interaction (defences and units) wasn't working correctly over the network, this was fixed easily by adding if is local player statements to the UI. 
