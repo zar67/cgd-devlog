@@ -55,4 +55,10 @@ With several systems now requiring the cursor to be shown or hidden, I added in 
 
 This week I also added healing from bases when the player is inside a capture zone of their own base and the base isn't being contested or cooling down. 
 
+As Ed managed to get the model in for the player, I edited the materials to create one for blue as well as read and setup a function to change the colour of the player based on what team they're on. 
+
+<p align="center">
+  <img src="{{site.baseurl}}/assets/cohort-project/team-colours.png" alt="Team Colours"/>
+</p> 
+
 Finally we had another play test on Monday where we found more issues and closed ones that had been fixed. 
