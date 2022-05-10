@@ -5,9 +5,10 @@ date: 2021-11-04 18:00:00 +0100
 tags: jam-one assassins-creed 
 ---
 
-We presented our game on Wednesday and got some final feedback from Andy and Simon as well as the other students in the room. Everyone also play tested our game which revealed some bugs and some design issues, which are as follows:
+We presented our game on Wednesday and got some final feedback. Everyone also play tested our game which revealed some bugs and some design issues, which are as follows:
 
-# Good
+### Good
+
 - There was good feedback regarding flow and difficulty.
 - The climbing and jumping was well implemented.
 - Felt immersive and intuitive.
@@ -15,7 +16,8 @@ We presented our game on Wednesday and got some final feedback from Andy and Sim
 - Excellent tutorial which allows for easy understanding.
 - Simple and well-done controls.
 
-# Improvements/Bugs
+### Improvements/Bugs
+
 - Animations and movement are quite smooth which isn't realistic for an Atari game.
 - The wall jumping seemed to be tricky for people to understand.
 - The difficulty needs to be balanced better.

@@ -5,8 +5,6 @@ date: 2022-04-06 18:00:00 +0100
 tags: cohort-project
 ---
 
-# Summary
-
 This week we started with a cohort meeting to assess how the project was going and to attempt to fix any concerns the cohort had. We came to the conclusion that weekly demonstrations of what everyone was doing made sense and we should be play testing as a group each week as well. We also came up with a list of things we needed for the game and from that list decided what we wanted for next week. 
 
 Features still to implement:

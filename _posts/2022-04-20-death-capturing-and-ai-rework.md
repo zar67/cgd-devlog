@@ -5,8 +5,6 @@ date: 2022-04-20 18:00:00 +0100
 tags: cohort-project
 ---
 
-# Summary
-
 This week I fixed a few errors with the death minimap camera being un-set and a network object error with the player respawn positions. I also fixed an error in the skill tree where an event was being subscribed to in OnEnable and OnDisable which was causing an error.
 
 This week I fixed a bug where players would still capture bases on death, since the player model was still in the capture zone. This was simple enough to fix as adding a check to make sure players in the zone were alive was all that was needed. 

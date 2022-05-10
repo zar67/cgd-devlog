@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Base Capturing"
+title: "Win Conditions"
 date: 2022-02-09 18:00:00 +0100
 tags: cohort-project
 ---
 
-# Summary
 This week I focused on getting the win conditions of the game working, I used Liam's game timer script and Ed's base ownership checking but merged them all together and got them all working correctly. The three win conditions of the game are as follows:
 
 - A team reaches a score threshold, score is earned by owning bases.

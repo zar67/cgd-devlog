@@ -5,7 +5,6 @@ date: 2021-12-07 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 
-# Summary
 The final week was mainly bug fixing and small tweaks as well as adding some quality of life features.
 
 I added in different coloured ruins, to indicate to the player which ruin is theirs. I changed the ruins to have a unit type so when the unit dies the player can change the unit, after discussing with the group I changed this so that when the player changes the unit type on the ruin, the unit is regenerated so they don't have to wait until the unit dies to get the new type. 

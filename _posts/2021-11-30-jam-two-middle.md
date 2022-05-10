@@ -5,7 +5,6 @@ date: 2021-11-30 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 
-# Summary
 We got all the functionality working before the first playtest, but we didn't get it all merged together, meaning we weren't able to fully test our game. However, most of the Networking and the big tasks are either completed or near complete which puts us in a good position for the coming weeks. Andy liked what we had produced but encouraged us to get it all merged.
 
 Andy also mentioned player types to all the groups and got us thinking about how our game would appeal (or not appeal) to each player type: Killer, Achiever, Socialiser and Explorer.
@@ -27,7 +26,3 @@ I also added a Fog of War to the map to engage Explorer player types more.
 <p align="center">
   <img src="{{site.baseurl}}/assets/jam-two/fog-of-war.png" alt="Fog Of War"/>
 </p> 
-
-# Next Steps
-- Play Test 
-- Polishing and Bug Fixing

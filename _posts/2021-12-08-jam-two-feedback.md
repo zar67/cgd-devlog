@@ -5,10 +5,10 @@ date: 2021-12-08 18:00:00 +0100
 tags: jam-two turn-based-cyborgs
 ---
 
-# Summary
-We presented our game on Wednesday and got some final feedback from Andy and Simon, mainly that we need to improve the feedback in our game and polish it.
+We presented our game on Wednesday and got some final feedback, mainly that we need to improve the feedback in our game and polish it.
 
-# Improvements/Bugs
+### Improvements/Bugs
+
 - Code clean-up.
 - Tutorial section.
 - Better sound effects.
