@@ -7,24 +7,7 @@ tags: jam-three
 
 For our third jam we participated in the Global Game Jam over a weekend, the theme was Duality and so we spent Friday evening discussing what we wanted the game to be. We decided on: a puzzle game with two dimensions, the player will need to switch between dimensions in order to find objects and solve the puzzle. 
 
-I started by creating an empty project and then focused on getting a greyscale shader up and running which I had done by the end of Friday. I then focused on getting a script setup that could keep objects in a certain dimension, this was quite simple to do and just required turning the gameobject on and off on an event call:
-
-```c#
-public class DimensionalObject : MonoBehaviour
-{
-    [SerializeField] private bool m_inCreepyDimension = false;
-
-    private void Awake()
-    {
-        DimensionSwitcher.OnDimensionSwitched += OnDimensionSwitched;
-    }
-
-    private void OnDimensionSwitched(bool inCreepyDimension)
-    {
-        gameObject.SetActive(m_inCreepyDimension == inCreepyDimension);
-    }
-}
-```
+I started by creating an empty project and then focused on getting a greyscale shader up and running which I had done by the end of Friday. I then focused on getting a script setup that could keep objects in a certain dimension, this was quite simple to do and just required turning the gameobject on and off on an event call.
 
 I also setup logic so that the object the player is carrying would stay with the player when they switched dimensions. 
 
